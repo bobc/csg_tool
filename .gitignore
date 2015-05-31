@@ -1,0 +1,8 @@
+*~
+*.bak
+bin/
+obj/
+*.lst
+*.suo
+.svn/
+
