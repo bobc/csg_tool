@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RMC">
-      <HintPath>..\..\..\Common\RMC\bin\Debug\RMC.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Data" />
@@ -45,6 +42,12 @@
     <Compile Include="HersheyFont.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VectorPath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RMC\RMC.csproj">
+      <Project>{a729b4d7-858b-4675-a07f-bf4d38260caf}</Project>
+      <Name>RMC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
