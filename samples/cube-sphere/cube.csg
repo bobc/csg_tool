@@ -1,0 +1,5 @@
+group() {
+	color([1, 0, 0, 1]) {
+		cube(size = [10, 10, 10], center = false);
+	}
+}
