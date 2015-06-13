@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <amf unit="millimeter">
   <object id="0">
     <metadata type="name">C:\git_bobc\csg_tool\samples\cube-sphere\std_intersect.csg</metadata>
@@ -845,7 +845,7 @@
           </coordinates>
         </vertex>
       </vertices>
-      <volume>
+      <volume materialid="1">
         <triangle>
           <color>
             <r>1</r>
@@ -1289,4 +1289,13 @@
       </volume>
     </mesh>
   </object>
+  <material id="1">
+    <metadata type="name">Material_1</metadata>
+    <color>
+      <r>1</r>
+      <g>0</g>
+      <b>0</b>
+      <a>1</a>
+    </color>
+  </material>
 </amf>

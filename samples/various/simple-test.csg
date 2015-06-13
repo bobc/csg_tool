@@ -1,0 +1,43 @@
+group() {
+	group() {
+		color([1, 1, 1, 1]) {
+			multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 2.5], [0, 0, 0, 1]]) {
+				cylinder($fn = 30, $fa = 12, $fs = 2, h = 5, r1 = 10, r2 = 10, center = true);
+			}
+		}
+	}
+	group() {
+		multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1.5], [0, 0, 0, 1]]) {
+			color([1, 0, 0, 1]) {
+				difference() {
+					cube(size = [35, 35, 3], center = true);
+					group() {
+						group() {
+							multmatrix([[1, 0, 0, -20], [0, 1, 0, -20], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								cube(size = [35, 35, 5], center = true);
+							}
+							multmatrix([[1, 0, 0, -20], [0, 1, 0, 20], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								cube(size = [35, 35, 5], center = true);
+							}
+						}
+						group() {
+							multmatrix([[1, 0, 0, 20], [0, 1, 0, -20], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								cube(size = [35, 35, 5], center = true);
+							}
+							multmatrix([[1, 0, 0, 20], [0, 1, 0, 20], [0, 0, 1, 0], [0, 0, 0, 1]]) {
+								cube(size = [35, 35, 5], center = true);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	group() {
+		color([0, 0.501961, 0, 1]) {
+			multmatrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]]) {
+				cube(size = [30, 30, 2], center = true);
+			}
+		}
+	}
+}
